@@ -1,19 +1,38 @@
-<div>
-  <ul>
-    <li [routerLinkActive]="'isActive'">
-      <a [routerLink]="['/home']" [routerLinkActive]="'isActive'">Home</a>
-    </li>
-    <li [routerLinkActive]="'isActive'">
-      <a [routerLink]="['/about']" [routerLinkActive]="'isActive'">About</a>
-    </li>
-    <li [routerLinkActive]="'isActive'">
-      <a [routerLink]="['/blog']" [routerLinkActive]="'isActive'">Blog</a>
-    </li>
-    <li [routerLinkActive]="'isActive'">
-      <a [routerLink]="['/contact']" [routerLinkActive]="'isActive'">Contact</a>
-    </li>
-    <li [routerLinkActive]="'isActive'">
-      <a [routerLink]="['/impact']" [routerLinkActive]="'isActive'">Impact</a>
-    </li>
-  </ul>
+<div class="side-list">
+    
+      <a [routerLink]="['/home']" [routerLinkActive]="'isActive'">
+        <div class="side-link">
+            <i class="fas fa-bullseye"></i>
+            <span class="link-text">Home</span>
+        </div>       
+      </a>
+        
+      <a [routerLink]="['/about']" [routerLinkActive]="'isActive'">
+        <div class="side-link">
+            <i class="fas fa-bullseye"></i>
+            <span class="link-text">About</span>
+        </div>  
+      </a>
+       
+      <a [routerLink]="['/blog']" [routerLinkActive]="'isActive'">
+        <div class="side-link">
+            <i class="fas fa-bullseye"></i> 
+            <span class="link-text">Blog</span>
+        </div>
+      </a>
+          
+      <a [routerLink]="['/contact']" [routerLinkActive]="'isActive'">
+        <div class="side-link">
+            <i class="fas fa-bullseye"></i> 
+            <span class="link-text">Contact</span>
+        </div>  
+      </a>
+       
+      <a [routerLink]="['/impact']" [routerLinkActive]="'isActive'">
+        <div class="side-link">
+            <i class="fas fa-bullseye"></i> 
+            <span class="link-text">Impact</span>
+        </div>  
+      </a>
+  
 </div>
