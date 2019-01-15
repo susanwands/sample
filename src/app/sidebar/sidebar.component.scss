@@ -3,7 +3,6 @@
         flex-direction: column;
         padding:0;
         margin:0;
-        width:150px;
         a{
             background-color: lightblue;  
             text-decoration: none;
@@ -15,11 +14,10 @@
 
                 .fas{
                     padding-right:5px;
+                    display: inline;
                 }
             }
         }
-   
-        
         a:hover{
             background-color: cornflowerblue;
             text-decoration: none;
@@ -30,24 +28,44 @@
                 font-size:1.1em;
             }           
         }
+        .side-social{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: space-between;
+                a{
+                    padding:10px 0 10px 20px;                  
+                }
+        }
 
-    @media (max-width: 575.98px) { 
-        // toggle sidebar to hamburger
+    @media (min-width: 575.98px) { 
+       .side-social{
+           display: none;
+       }
      }
 
-    // Small devices (landscape phones, less than 768px)
-    // @media (max-width: 767.98px) { ... }
-
-    // Medium devices (tablets, less than 992px)
-    @media (max-width: 991.98px) { 
-        // Icon only sidebar
-        // Hover to full sidebar
-     }
-
-    // Large devices (desktops, less than 1200px)
+     @media (max-width: 575.98px) { 
+        .link-text{
+            display:inline;
+         }
+      }   
+   
     @media (max-width: 1199.98px) { 
-        // full sidebar
+       .link-text{
+           display:none;
+        }
+       
      }
-
-    
+     @media (max-width: 575.98px) { 
+        .link-text{
+            display:inline;
+         }
+      }
+     
+}
+.side-list:hover{
+    .link-text{
+        display: inline;
+    }
 }

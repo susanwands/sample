@@ -1,3 +1,5 @@
+
+
 #app-wrapper {
     height: 100%;   
     overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
@@ -36,21 +38,19 @@
 
 .bottom {
     display: flex;
-    // overflow-y: auto; 
+    overflow-y: auto; 
     flex-direction: row; 
-   height:calc(100vh - 80px);
+    height:calc(100vh - 80px);
   // background-color: red;
 
-    #right{
-       
+    #right{       
         flex-grow: 1;
         background-color: red;
+        padding-left:25px;
     }
     
     #left{
-       
-        flex-grow: 1;
-        background-color: blue;
+        background-color: blue;       
     }
 }
 
@@ -58,11 +58,19 @@
     .top{
         .toggles{
             display: block;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
         }
     }
 
     #left{
         display: none;
+       
+    }
+
+    app-social{
+        display:none;
+       
     }
  }
 
@@ -70,4 +78,6 @@
 
 .show-me{
    display: flex !important;
+   -webkit-animation: fadeIn 1s;
+   animation: fadeIn 1s;
 }
