@@ -41,3 +41,5 @@ ngx-toastr
 @angular/animations
 
 @fortawesome/angular-fontawesome
+
+ng2-charts

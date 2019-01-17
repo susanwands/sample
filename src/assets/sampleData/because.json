@@ -1,0 +1,35 @@
+{
+    "company":{
+        "pillars":[{
+            "title": "Education",
+            "initiatives":[
+                {
+                    "title": "STEM in Boston",
+                    "activities":[
+                        {"title": "Girls Who Code Scholarship"},
+                        {"title": "Science Equipment Fundraiser"},
+                        {"title": "Hour of Code Volunteer Event"}
+                    ]
+                    
+                },
+                {
+                    "title": "Arts in Schools",
+                    "activities":[
+                        {"title": "ART Supply Drive"},
+                        {"title": "Art Gallery Fundraiser Event"},
+                        {"title": "European Arts Trip Sponsorship"}
+                    ]
+                    
+                },
+                {
+                    "title": "STEM Education"
+                    
+                },
+                {
+                    "title": "STEM Education"
+                    
+                }
+            ]
+        }]
+    }
+}

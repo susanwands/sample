@@ -41,22 +41,21 @@
 }
 
 .bottom {
-    display: flex;
-   
+    display: flex;   
     height: calc(100vh - 80px);
     position: relative;
 
     #right{       
         flex-grow: 1;
         background-color: $background;
-        padding-left:20px;
-        padding-top:20px;
+        padding:10px;        
         overflow-y: auto; 
     }
     
     #left{
         flex-shrink: 0;
-        background-color: $sideBackground;      
+        background-color: $sideBackground;   
+        z-index:1111;   
     }
 }
 
@@ -83,9 +82,3 @@
 
 
 
-.show-me{
-   display: flex !important;
-   
-  /*  -webkit-animation: fadeIn 1s;
-   animation: fadeIn 1s; */
-}
